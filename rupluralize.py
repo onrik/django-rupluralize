@@ -7,7 +7,7 @@ register = Library()
 @register.filter
 def rupluralize(count, arg):
     """
-    {{ count } пользовател{% count|rupluralize:"ь,я,ей" %}
+    {{ count }} пользовател{% count|rupluralize:"ь,я,ей" %}
     """
     forms = arg.split(',')
     try:
